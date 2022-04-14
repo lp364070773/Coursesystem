@@ -4,11 +4,14 @@
 from lib import common
 
 teacher_info = {
-    'user':None
+    'user': None
 }
+
+
 # 老师登录
 def login():
     pass
+
 
 # 查看教授课程
 @common.auth('teacher')
@@ -21,10 +24,12 @@ def check_course():
 def choose_course():
     pass
 
+
 # 查看课程下的学生
 @common.auth('teacher')
 def check_stu_from_course():
     pass
+
 
 # 修改学生分数
 @common.auth('teacher')
@@ -33,13 +38,14 @@ def change_score_from_student():
 
 
 func_dict = {
-    '1':login,
-    '2':check_course,
-    '3':choose_course,
-    '4':check_stu_from_course,
-    '5':change_score_from_student,
+    '1': login,
+    '2': check_course,
+    '3': choose_course,
+    '4': check_stu_from_course,
+    '5': change_score_from_student,
 
 }
+
 
 def teacher_view():
     while True:
